@@ -100,6 +100,11 @@ sudo nano /etc/apache2/sites-available/FlaskApp.conf
 
 sudo a2ensite FlaskApp
 
+cd ..
+
+sudo nano flaskapp.wsgi
+
+sudo nano 
 #!/usr/bin/python
 import sys
 import logging
