@@ -109,11 +109,11 @@ remove
     
 follow the instruction in the readme of the git to get a client_secrets.json file for the project.
 
+Check if everything is fine.
+
 ```bash
   $> sudo python __init__.py
   ``` 
-
-To check if everything is fine, or you might be missing something.Please check on the catalog github read me of my app
 
 ```bash
   $> sudo deactivate
