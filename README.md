@@ -4,9 +4,9 @@
 
 on your terminal type
   ```bash
-  $> sudo adduser <username>
-  $> sudo adduser <username> sudo
-  $> su - <username>
+  $> sudo adduser grader
+  $> sudo adduser grader sudo
+  $> su - grader
   ```
 ## Update all currently installed packages
   
