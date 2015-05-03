@@ -126,8 +126,8 @@ Add the following
 
 ```
 <VirtualHost *:80>
-                ServerName YOUR_IP 
-                ServerAdmin admin@YOUR_IP
+                ServerName 54.191.223.118 
+                ServerAdmin admin@54.191.223.118
                 WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
                 <Directory /var/www/FlaskApp/FlaskApp/>
                         Order allow,deny
@@ -146,15 +146,13 @@ Add the following
 
 ```bash
   $> sudo a2ensite FlaskApp
-  $> sudo a2ensite FlaskApp
-  $> sudo a2ensite FlaskApp
+  $> cd ..
+  $> sudo nano flaskapp.wsgi
   ```
-sudo a2ensite FlaskApp
 
-cd ..
+Add the following
 
-sudo nano flaskapp.wsgi
-
+```bash
 sudo nano 
 #!/usr/bin/python
 import sys
@@ -164,10 +162,9 @@ sys.path.insert(0,"/var/www/FlaskApp/")
 
 from FlaskApp import app as application
 application.secret_key = 'Add your secret key'
+```
+```bash
+  $> sudo service apache2 restart
+  ```
 
-
-sudo service apache2 restart 
-
-
-
-http://52.11.88.226/
+#this is the ip of the project 54.191.223.118
