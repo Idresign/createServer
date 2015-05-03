@@ -105,7 +105,7 @@ remove
       $> sudo pip install sqlalchemy
       $> sudo pip install requests
       $> sudo pip install oauth2client
-    ``` 
+    ```
     
 follow the instruction in the readme of the git to get a client_secrets.json file for the project.
 
