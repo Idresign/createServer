@@ -89,38 +89,42 @@ on your terminal type
     $> cd FlaskApp/
     $> sudo mv project.py __init__.py
     $> sudo nano __init__.py 
-    $> sudo nano __init__.py 
-    $> sudo nano __init__.py 
   ``` 
 
-
-
-
-
-remove debug = true
-
-sudo apt-get install python-pip 
-
-sudo pip install virtualenv 
-
-sudo virtualenv venv
-
-source venv/bin/activate
-
-sudo pip install Flask 
-
-sudo pip install sqlalchemy
-  $> sudo pip install requests
-  $> sudo pip install oauth2client
-
+remove
+  ```python
+    debug = true
+  ```
+  
+  ```bash
+      $> sudo apt-get install python-pip 
+      $> sudo pip install virtualenv 
+      $> sudo virtualenv venv
+      $> source venv/bin/activate
+      $> sudo pip install Flask 
+      $> sudo pip install sqlalchemy
+      $> sudo pip install requests
+      $> sudo pip install oauth2client
+    ``` 
+    
 follow the instruction in the readme of the git to get a client_secrets.json file for the project.
 
-sudo python __init__.py  to check if everything is fine, or you might be missing something.Please check on the catalog github read me of my app
+```bash
+  $> sudo python __init__.py
+  ``` 
 
-deactivate
+To check if everything is fine, or you might be missing something.Please check on the catalog github read me of my app
 
-sudo nano /etc/apache2/sites-available/FlaskApp.conf
+```bash
+  $> sudo deactivate
+  ```
 
+```bash
+  $> sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  ```
+Add the following
+
+```
 <VirtualHost *:80>
                 ServerName YOUR_IP 
                 ServerAdmin admin@YOUR_IP
@@ -138,8 +142,13 @@ sudo nano /etc/apache2/sites-available/FlaskApp.conf
                 LogLevel warn
                 CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+```
 
-
+```bash
+  $> sudo a2ensite FlaskApp
+  $> sudo a2ensite FlaskApp
+  $> sudo a2ensite FlaskApp
+  ```
 sudo a2ensite FlaskApp
 
 cd ..
