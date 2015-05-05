@@ -8,6 +8,8 @@ on your terminal type
   $> sudo adduser grader sudo
   $> su - grader
   ```
+  
+  the passowrd is grader
 ## Update all currently installed packages
   
   ```bash
