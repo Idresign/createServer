@@ -16,6 +16,8 @@ on your terminal type
   $> sudo apt-get update
   $> sudo apt-get upgrade
   $> sudo apt-get dist-upgrade
+  $> sudo unattended-upgrade
+  $> sudo apt-get install unattended-upgrades
   ```
 ## secure ssh connection
 
