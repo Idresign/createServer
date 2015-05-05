@@ -121,8 +121,8 @@ Add the following
 
 ```
 <VirtualHost *:80>
-                ServerName 54.191.223.118 
-                ServerAdmin admin@54.191.223.118
+                ServerName 54.191.48.27 
+                ServerAdmin admin@54.191.48.27
                 WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
                 <Directory /var/www/FlaskApp/FlaskApp/>
                         Order allow,deny
@@ -162,4 +162,4 @@ application.secret_key = 'Add your secret key'
   $> sudo service apache2 restart
   ```
 
-###this is the ip of the project 54.191.223.118
+###this is the ip of the project 54.191.48.27
