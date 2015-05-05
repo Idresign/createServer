@@ -148,7 +148,6 @@ Add the following
 Add the following
 
 ```bash
-sudo nano 
 #!/usr/bin/python
 import sys
 import logging
