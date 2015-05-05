@@ -38,15 +38,6 @@ on your terminal type
     # What ports, IPs and protocols we listen for
     Port 2200
   ```
-  
-  change the value of PermitRootLogin to no
-  
-  ```vim
-    # Authentication:
-    LoginGraceTime 120
-    PermitRootLogin no
-    StrictModes yes
-  ```
 
 ## Configure the Universal Firewall to only allow incoming connections
 
