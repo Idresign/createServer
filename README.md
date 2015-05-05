@@ -80,7 +80,7 @@ on your terminal type
     $> cd FlaskApp/
     $> sudo apt-get install git 
     $> sudo git clone https://github.com/Idresign/Catalog-app.git 
-    $> mv sudo mv Catalog-app FlaskApp
+    $> sudo mv Catalog-app FlaskApp
     $> cd FlaskApp/
     $> sudo mv project.py __init__.py
     $> sudo nano __init__.py 
