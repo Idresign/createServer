@@ -9,7 +9,7 @@ on your terminal type
   $> su - grader
   ```
   
-  the passowrd is grader
+  the passowrd is grader/9,
 ## Update all currently installed packages
   
   ```bash
