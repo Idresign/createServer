@@ -13,6 +13,8 @@ then I restarted the machine
   $> service sshd restart
 ```
 
+on my client machine, I copied the rsa key to my remote machine 
+
 ```bash
   $> ssh-copy-id -i ~/.ssh/id_rsa.pub grader@52.11.209.242
   $> ssh grader@52.11.209.242
