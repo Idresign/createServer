@@ -20,6 +20,8 @@ on my client machine, I copied the rsa key to my remote machine
   $> ssh grader@52.11.209.242
 ```
 
+the passoword is grader/9,
+
 ## creating a linux user
 
 on your terminal type
@@ -29,7 +31,6 @@ on your terminal type
   $> su - grader
   ```
   
-  the passowrd is grader/9,
 ## Update all currently installed packages
   
   ```bash
