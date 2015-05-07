@@ -56,6 +56,11 @@ on your terminal type
     # What ports, IPs and protocols we listen for
     Port 2200
   ```
+  
+  also put the permitrootlogin to no
+  ```vim
+    PermitRootLogin no
+  ```
 
 ## Configure the Universal Firewall to only allow incoming connections
 
