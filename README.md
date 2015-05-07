@@ -1,5 +1,23 @@
 # configuration and deploying the app in the server
 
+## creating a public rsa key
+
+modify the file /etc/ssh/sshd_config to the following
+
+```
+  PasswordAuthentication yes
+```
+then I restarted the machine
+
+```bash
+  $> service sshd restart
+```
+
+```bash
+  $> ssh-copy-id -i ~/.ssh/id_rsa.pub grader@52.11.209.242
+  $> ssh grader@52.11.209.242
+```
+
 ## creating a linux user
 
 on your terminal type
@@ -121,8 +139,8 @@ Add the following
 
 ```
 <VirtualHost *:80>
-                ServerName 54.191.48.27 
-                ServerAdmin admin@54.191.48.27
+                ServerName 52.11.209.242
+                ServerAdmin admin@52.11.209.242
                 WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
                 <Directory /var/www/FlaskApp/FlaskApp/>
                         Order allow,deny
@@ -161,4 +179,4 @@ application.secret_key = 'Add your secret key'
   $> sudo service apache2 restart
   ```
 
-###this is the ip of the project 54.191.48.27
+###this is the ip of the project 52.11.209.242
