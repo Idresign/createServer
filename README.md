@@ -5,7 +5,7 @@
 modify the file /etc/ssh/sshd_config to the following
 
 ```
-  PasswordAuthentication yes
+  PasswordAuthentication no
 ```
 then I restarted the machine
 
@@ -16,7 +16,9 @@ then I restarted the machine
 on my client machine, I copied the rsa key to my remote machine 
 
 ```bash
-  $> ssh-copy-id -i ~/.ssh/id_rsa.pub grader@52.11.209.242
+  $> ssh-copy-id -i /path_top_RSA/id_rsa.pub grader@52.24.130.27
+  $> eval "$(ssh-agent -s)"
+  $> ssh-add
   $> ssh grader@52.11.209.242
 ```
 
@@ -147,8 +149,8 @@ Add the following
 
 ```
 <VirtualHost *:80>
-                ServerName 52.11.209.242
-                ServerAdmin admin@52.11.209.242
+                ServerName 52.24.130.27
+                ServerAdmin admin@52.24.130.27
                 WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
                 <Directory /var/www/FlaskApp/FlaskApp/>
                         Order allow,deny
@@ -187,4 +189,4 @@ application.secret_key = 'Add your secret key'
   $> sudo service apache2 restart
   ```
 
-###this is the ip of the project 52.11.209.242
+###this is the ip of the project 52.24.130.27
