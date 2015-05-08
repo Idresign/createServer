@@ -42,6 +42,18 @@ on your terminal type
   $> sudo unattended-upgrade
   $> sudo apt-get install unattended-upgrades
   ```
+  
+  to configure Automatic Updates for unattended-upgrades, edit file ```/etc/apt/apt.conf.d/50unattended-upgrades```
+  
+  ```bash
+    Unattended-Upgrade::Allowed-Origins {
+          "Ubuntu trusty-security";
+    //    "Ubuntu trusty-updates";
+  };
+  ```
+  
+  
+  
 ## secure ssh connection
 
 ```bash
