@@ -10,7 +10,7 @@ modify the file /etc/ssh/sshd_config to the following
 then I restarted the machine
 
 ```bash
-  $> service sshd restart
+  $> sudo service ssh restart
 ```
 
 on my client machine, I copied the rsa key to my remote machine 
