@@ -19,7 +19,7 @@ on my client machine, I copied the rsa key to my remote machine
   $> ssh-copy-id -i /path_top_RSA/id_rsa.pub grader@52.24.130.27
   $> eval "$(ssh-agent -s)"
   $> ssh-add
-  $> ssh grader@52.11.209.242
+  $> ssh -p 2200 grader@52.24.130.27
 ```
 
 the passoword is grader/9,
